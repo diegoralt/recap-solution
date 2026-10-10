@@ -9,7 +9,7 @@ Límite confirmado por Diego: 9 de octubre de 2026, 23:50 CDMX (10 de octubre, 0
 | Team name | Recap (propuesta) | Confirmar nombre del equipo |
 | Team captain | — | Nombre público de Diego |
 | Contact email | — | Correo de contacto; no usar email técnico del sandbox |
-| Project link | — | URL que realmente puedan abrir los jueces; localhost no sirve remotamente |
+| Project link | https://github.com/diegoralt/recap-solution | URL que realmente puedan abrir los jueces; localhost no sirve remotamente |
 | Demo video link | — | Grabar y subir video; probar acceso sin la cuenta del autor |
 | Team members | Opcional | Nombres de integrantes o dejar vacío si corresponde |
 | Sponsor prize eligibility | Reap – Most Worthwhile Problem | Seleccionar solo este track |

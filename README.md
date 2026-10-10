@@ -1,3 +1,26 @@
+# Recap — compras delegadas con presupuesto verificable
+
+Reap × AI Builders México. Un solicitante pide una compra con presupuesto; un responsable distinto autoriza el total cotizado y aprueba el pago en la página alojada de Reap. Solo sandbox.
+
+## Inicio rápido (modo fixture, sin credenciales)
+
+Requiere Node 24, sin dependencias.
+
+1. `cp .env.example .env.local`
+2. `npm start` y abre http://localhost:3000
+3. Entra como `solicitante` o `responsable` con las contraseñas de `.env.local` (valores de ejemplo en `.env.example`).
+4. Pruebas: `npm run verify` (41 pruebas).
+
+El modo fixture simula el proveedor localmente; no demuestra la integración con Reap. Para sandbox real, descomenta el bloque de Reap en `.env.example`, usa tus propias credenciales y ejecuta `npm run tls` antes de `npm start` (https://localhost:3443).
+
+## Estado honesto
+
+Comprobado en sandbox de Reap: registro de tarjeta ACTIVE, cotizaciones, autorización y creación de checkout con pago alojado. Dos checkouts terminaron FAILED sin motivo en la respuesta de Reap; **no hay pago COMPLETED**. Detalle en [docs/resultados.md](docs/resultados.md). Sin planificador LLM: flujo determinista. Los datos de tarjeta solo se introducen en Reap.
+
+Licencia: MIT.
+
+---
+
 # Reap × AIBM — espacio de trabajo
 
 Contexto revisado el 2026-10-09. Carpeta solicitada: `recap-solution`.
