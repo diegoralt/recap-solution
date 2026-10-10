@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ee"><title>Recap · Compras con confianza</title>
+  <link rel="stylesheet" href="/styles.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Recap, inicio"><span class="brand-mark" aria-hidden="true">r↗</span> recap<span class="brand-dot">.</span></a>
+    <div class="header-right"><span id="mode" class="badge" title="Entorno de evaluación: los pagos y entregas no son reales">Cargando…</span><span id="identity"></span><button id="logout" class="text-button" hidden>Salir</button></div>
+  </header>
+  <main id="main">
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <section id="login-view" class="login-layout">
+      <div class="intro">
+        <p class="eyebrow">COMPRAS DELEGADAS CON CONFIANZA</p>
+        <h1>Delega la compra.<br>Conserva el <span>control.</span></h1>
+        <p class="intro-copy">Una solicitud clara. Un presupuesto visible. Tu aprobación antes de pagar.</p>
+        <div class="flow-preview" aria-label="El proceso"><span>01 <b>Solicitar</b></span><i aria-hidden="true">→</i><span>02 <b>Revisar</b></span><i aria-hidden="true">→</i><span>03 <b>Autorizar</b></span></div>
+        <p class="intro-footnote">Solicitudes, autorizaciones y pagos en un mismo lugar.</p>
+      </div>
+      <div class="login-card panel">
+        <span class="mini-label">TU ESPACIO DE TRABAJO</span><h2>Vamos a empezar</h2>
+        <p class="muted">Cada persona entra con su propia cuenta.</p>
+        <form id="login-form">
+          <label for="username">Usuario</label><select id="username" name="username" autocomplete="username"><option value="solicitante">solicitante</option><option value="responsable">responsable</option></select>
+          <label for="password">Contraseña</label><input id="password" name="password" type="password" autocomplete="current-password" required>
+          <button class="primary full" type="submit">Entrar a mi espacio <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="small muted">Acceso por invitación. Selecciona tu cuenta e introduce tu contraseña.</p>
+      </div>
+    </section>
+    <section id="workspace" hidden>
+      <div class="workspace-heading"><div><p class="eyebrow">TU ESPACIO DE COMPRAS</p><h1 id="workspace-title">Cada compra, bajo control.</h1><p id="workspace-description" class="muted"></p></div><button id="reload" class="secondary">Actualizar bandeja ↻</button></div>
+      <div class="stats" aria-label="Resumen de solicitudes"><div><span class="mini-label">SOLICITUDES</span><strong id="stat-total">0</strong></div><div><span class="mini-label">POR REVISAR</span><strong id="stat-review">0</strong></div><div><span class="mini-label">BLOQUEADAS</span><strong id="stat-blocked">0</strong></div><div><span class="mini-label">PAGOS CONFORMES</span><strong id="stat-complete">0</strong></div></div>
+      <section id="enrollment-panel" class="integration panel" hidden>
+        <div><p class="mini-label">MÉTODO DE PAGO · REAP</p><h2 id="enrollment-status">Registro pendiente</h2><p class="muted small">Registra tu tarjeta de forma segura en Reap.</p></div>
+        <div class="actions"><button id="enroll" class="secondary">Registrar en Reap ↗</button><a id="enrollment-link" class="button-link primary" target="_blank" rel="noopener noreferrer" hidden>Continuar en Reap ↗</a><button id="check-enrollment" class="text-button">Consultar tarjeta</button></div>
+      </section>
+      <div class="workspace-grid">
+        <aside>
+          <section id="new-request-panel" class="panel" hidden>
+            <div class="section-heading"><span class="step-number">01</span><h2 id="request-form-title">Nueva solicitud</h2></div>
+            <p class="muted small">Define tus condiciones. El responsable decide antes del pago.</p>
+            <form id="request-form">
+              <label for="candidate">Contexto y producto</label><select id="candidate" name="candidateKey"></select>
+              <p id="product-reference" class="small reference"></p>
+              <div class="form-row"><div><label for="quantity">Cantidad</label><input id="quantity" name="quantity" type="number" min="1" max="10" required></div><div><label for="budget">Límite total</label><input id="budget" name="budget" type="text" inputmode="decimal" pattern="[0-9]+(\.[0-9]{1,2})?" required></div><div><label for="currency">Moneda</label><select id="currency" name="currency"><option>MXN</option><option>USD</option></select></div></div>
+              <label for="description">Motivo de la compra</label><textarea id="description" name="description" rows="2" maxlength="1000" required></textarea>
+              <label for="attributes">Características obligatorias</label><input id="attributes" placeholder="Ej. lilac" maxlength="200"><p class="small muted">Separadas por comas. Una característica sin evidencia bloquea la compra.</p>
+              <details class="address-details" open><summary>Dirección de entrega</summary><div class="form-row two"><div><label for="firstName">Nombre</label><input id="firstName" value="Demo" required></div><div><label for="lastName">Apellido</label><input id="lastName" value="Prueba" required></div></div>
+                <label for="addressLine1">Calle</label><input id="addressLine1" value="Calle de Prueba 123" required>
+                <div class="form-row two"><div><label for="city">Ciudad</label><input id="city" value="Ciudad de México" required></div><div><label for="region">Estado</label><input id="region" value="CDMX"></div></div>
+                <div class="form-row two"><div><label for="postalCode">Código postal</label><input id="postalCode" value="01000" required></div><div><label for="country">País</label><select id="country"><option>MX</option><option>US</option><option>CA</option></select></div></div>
+                <label for="phone">Teléfono de contacto</label><input id="phone" type="tel" value="+525500000000" required>
+              </details>
+              <button id="request-submit" class="primary full" type="submit">Crear solicitud <span aria-hidden="true">→</span></button><button id="cancel-edit" class="text-button full" type="button" hidden>Cancelar edición</button>
+            </form>
+          </section>
+          <section class="request-list panel"><div class="section-heading"><h2>Solicitudes</h2><span id="list-count" class="count">0</span></div><div id="requests-list"></div></section>
+        </aside>
+        <section id="request-detail" class="detail panel" aria-label="Detalle de la solicitud"><div class="empty"><span class="empty-icon" aria-hidden="true">↗</span><h2>Una compra empieza con una intención.</h2><p class="muted">Crea o selecciona una solicitud para ver sus condiciones, aprobación y resultado.</p></div></section>
+      </div>
+      <footer>Recap · Delega la compra. Conserva el control. <details class="environment-info"><summary>Acerca de este entorno</summary><p>Evaluación del hackathon en sandbox: sin cobros ni entregas reales. Las cuentas representan roles de evaluación. Los ejemplos precargados utilizan datos ficticios.</p></details></footer>
+    </section>
+  </main>
+</body>
+</html>

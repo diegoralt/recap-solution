@@ -1,0 +1,118 @@
+{
+  "fecha": "2026-10-09",
+  "plan_hash": "c49a1b94370f5e6fc11384f546b43189a8b88558",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "40326bbf1132eeece41fa9c76d7c2dd135371bd8afeee8f1c2b2b66cdda4aef2"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "9c318b306bcae30c32d05d61a3d80f01dd1bb075e6e1ecaafabfd72f68b59d49"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "cd186663794eb69ca5708bee0ef792deefce69212b070851edd4a0930d41e241"
+    },
+    {
+      "path": "package.json",
+      "sha256": "ce82105e3c0bbefcfd850a8ea8607d531789cc76e864b0a24fc8b9fccabd9a94"
+    },
+    {
+      "path": "public/app.js",
+      "sha256": "14df67652591c66a6ae2a3f488402a7e7f451cba2c6032cafca04d022aa2ed87"
+    },
+    {
+      "path": "public/index.html",
+      "sha256": "160edf9a2d05a71a5e9e963e337a772d2b25f69f1e1d74b6777415785c4fc0c2"
+    },
+    {
+      "path": "public/styles.css",
+      "sha256": "76987a4318bdba0f7a77bdd56fa26843cd84efd0155d998201052cbeb9af66ff"
+    },
+    {
+      "path": "scripts/preflight.mjs",
+      "sha256": "847a874472ed0744b1020fc41106123d17e83880b77039d5758166f037c6d1fb"
+    },
+    {
+      "path": "scripts/tls.mjs",
+      "sha256": "3764303629e3d1694b5c927431ba643d24b8c521e0da33e09652c8b610692ed4"
+    },
+    {
+      "path": "scripts/verify.mjs",
+      "sha256": "e83c2df4f4a10c1786caad89197f461ed9b118aaff1ffebcb093e9146d35b073"
+    },
+    {
+      "path": "src/agent.mjs",
+      "sha256": "379b164ad60a183dcbe8bc356160599886d63db6c947e3c5950e7e0c8de97a0b"
+    },
+    {
+      "path": "src/auth.mjs",
+      "sha256": "461dcf85ba6aab03139ddbac3d6851fc475ee1140af02d7491f297ddbb9d55b8"
+    },
+    {
+      "path": "src/config.mjs",
+      "sha256": "9e0844fb6181754fe60260b914139e4ff514ceff51fae3bd9104739e7cee6261"
+    },
+    {
+      "path": "src/errors.mjs",
+      "sha256": "352bb853f2679a9586c8bf18a13999c7804bba6fe1086b99ca1753c0b938499e"
+    },
+    {
+      "path": "src/merchants.mjs",
+      "sha256": "7b0697ba797057c4dce4f680129089bb8a8165ab9be53a6c751ad8704f51175f"
+    },
+    {
+      "path": "src/policy.mjs",
+      "sha256": "535cedb92d00a322f2146cd19b0b135130911fb3b59c0f30bd7613327812429c"
+    },
+    {
+      "path": "src/providers/fixture.mjs",
+      "sha256": "5bd1155b6cca2eb372a83211659cc2319a064f7172e9008e05f38e3eef84d3e8"
+    },
+    {
+      "path": "src/providers/reap.mjs",
+      "sha256": "8d94bda6d5104fc352e9cfabe15dd14ba303f6a7cf4b75c9c7dea7b379eb53d0"
+    },
+    {
+      "path": "src/server.mjs",
+      "sha256": "c9badb5d28c700f3418b6db56075b81a4706327548d17031c77b5497d9798978"
+    },
+    {
+      "path": "src/store.mjs",
+      "sha256": "d543a0ad016df88338f7fcb519ae0b22ae083bfacb0603abecddac9afc1ef387"
+    },
+    {
+      "path": "test/helpers.mjs",
+      "sha256": "b66408a910866563b9f7bfe5958b87cc8f55e1de916742fe1d72d2316596d163"
+    },
+    {
+      "path": "test/http.test.mjs",
+      "sha256": "76c5ba1d33b14b31d38fb53469d9635d167b89eca8fca941cafea8e079a03994"
+    },
+    {
+      "path": "test/policy.test.mjs",
+      "sha256": "05791e2f4070defcdbb93619cd4711748967f2f841c5294a9baf64a38c76c17e"
+    },
+    {
+      "path": "test/recovery.test.mjs",
+      "sha256": "6178e3415ad7cea30088e5a1fec4b5995a9937cfac0087c8bcbe6b214c95b071"
+    },
+    {
+      "path": "test/provider-contract.test.mjs",
+      "sha256": "068ab75dd806fb59cacaee3b98f4634e2e9b6e160816daccc2ab7079f80e13af"
+    },
+    {
+      "path": "docs/resultados.md",
+      "sha256": "c1f241b0cee97dd69fbc4c709d306d402e52b876fb73968b869a3b279e567004"
+    },
+    {
+      "path": "docs/demo.md",
+      "sha256": "378213d8cd0a683813c7abc56a5c6969937a726ecc5e160134b16370ac6a1349"
+    },
+    {
+      "path": "docs/changes/2026-10-09-compras-delegadas/ajuste-contrato-reap.md",
+      "sha256": "fe70b494d0b7e682cba4d1c550e4a9b51a0834027e876da1ce249e8623874a6a"
+    }
+  ]
+}

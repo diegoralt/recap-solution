@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "path": "public/index.html",
+      "sha256": "11eef412cbdca30768b1f0d65448d22373cd45a314b4c6074a76409df0a32be6"
+    },
+    {
+      "path": "public/app.js",
+      "sha256": "6f9e7e0071619019257a956409cf1695db0c4a5d3ee1d63877e651d992ec207d"
+    },
+    {
+      "path": "public/styles.css",
+      "sha256": "bbba35db4feebb686c3310b78aa15e8003a0e21c9069c16b665600458df58591"
+    },
+    {
+      "path": "src/agent.mjs",
+      "sha256": "a2f1bb0bba27595f66256376138e5092464c2cfc617e4810fcb79606ba52e510"
+    },
+    {
+      "path": "docs/changes/2026-10-09-compras-delegadas/ajuste-contrato-reap.md",
+      "sha256": "dc0484d381a36c5c9aa7d63ef880170c67be4d76477aaa6e6b8fedf98d485e1d"
+    },
+    {
+      "path": "docs/changes/2026-10-09-compras-delegadas/plan.md",
+      "sha256": "a460ae0e3a96a434fe73212ddbaeb6115be749a507ba77c4f3a96ab6b6bcf7f0"
+    }
+  ]
+}

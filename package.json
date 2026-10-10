@@ -1,0 +1,11 @@
+{
+  "name": "recap-solution", "version": "0.1.0", "private": true, "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "start": "node --env-file=.env.local src/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "verify": "node scripts/verify.mjs",
+    "tls": "node scripts/tls.mjs",
+    "preflight": "node --env-file=.env.local scripts/preflight.mjs"
+  }
+}

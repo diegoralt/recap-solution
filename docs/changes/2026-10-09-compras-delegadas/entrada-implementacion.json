@@ -1,0 +1,102 @@
+{
+  "fecha": "2026-10-09",
+  "plan_hash": "c49a1b94370f5e6fc11384f546b43189a8b88558",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "40326bbf1132eeece41fa9c76d7c2dd135371bd8afeee8f1c2b2b66cdda4aef2"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "9c318b306bcae30c32d05d61a3d80f01dd1bb075e6e1ecaafabfd72f68b59d49"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "cd186663794eb69ca5708bee0ef792deefce69212b070851edd4a0930d41e241"
+    },
+    {
+      "path": "package.json",
+      "sha256": "ce82105e3c0bbefcfd850a8ea8607d531789cc76e864b0a24fc8b9fccabd9a94"
+    },
+    {
+      "path": "public/app.js",
+      "sha256": "0ec67b3d59cf38308a6ea4e8275e8539bd35331e44a9d695cdaa2d294860b2e1"
+    },
+    {
+      "path": "public/index.html",
+      "sha256": "90c4e5944841743950f34842a2e5bfb0dd89bc37a0bac3d7490fe878435258a9"
+    },
+    {
+      "path": "public/styles.css",
+      "sha256": "76987a4318bdba0f7a77bdd56fa26843cd84efd0155d998201052cbeb9af66ff"
+    },
+    {
+      "path": "scripts/preflight.mjs",
+      "sha256": "847a874472ed0744b1020fc41106123d17e83880b77039d5758166f037c6d1fb"
+    },
+    {
+      "path": "scripts/tls.mjs",
+      "sha256": "8b3655b314a6aeb96ba91bffe2c91f167e664137152b3b33cefff60e6e0a01f7"
+    },
+    {
+      "path": "scripts/verify.mjs",
+      "sha256": "e83c2df4f4a10c1786caad89197f461ed9b118aaff1ffebcb093e9146d35b073"
+    },
+    {
+      "path": "src/agent.mjs",
+      "sha256": "aeb1b9539867f704dc8a8e5b00d64f202e7444bd8b02b3fd624fcd3633471535"
+    },
+    {
+      "path": "src/auth.mjs",
+      "sha256": "461dcf85ba6aab03139ddbac3d6851fc475ee1140af02d7491f297ddbb9d55b8"
+    },
+    {
+      "path": "src/config.mjs",
+      "sha256": "9e0844fb6181754fe60260b914139e4ff514ceff51fae3bd9104739e7cee6261"
+    },
+    {
+      "path": "src/errors.mjs",
+      "sha256": "352bb853f2679a9586c8bf18a13999c7804bba6fe1086b99ca1753c0b938499e"
+    },
+    {
+      "path": "src/merchants.mjs",
+      "sha256": "7b0697ba797057c4dce4f680129089bb8a8165ab9be53a6c751ad8704f51175f"
+    },
+    {
+      "path": "src/policy.mjs",
+      "sha256": "4e1d3c56697dc6afd56024f1452d758fb97157d42e3dc6f0f6488addfeddcdff"
+    },
+    {
+      "path": "src/providers/fixture.mjs",
+      "sha256": "5bd1155b6cca2eb372a83211659cc2319a064f7172e9008e05f38e3eef84d3e8"
+    },
+    {
+      "path": "src/providers/reap.mjs",
+      "sha256": "bfb4c5933bd73a9a7e86f3c480695d80296777904d3ab8172a3a70d002804d2e"
+    },
+    {
+      "path": "src/server.mjs",
+      "sha256": "c9badb5d28c700f3418b6db56075b81a4706327548d17031c77b5497d9798978"
+    },
+    {
+      "path": "src/store.mjs",
+      "sha256": "eb0677fd127e982ff379cd7bb77a4894533a520e32fe883c007f0651ddb1343a"
+    },
+    {
+      "path": "test/helpers.mjs",
+      "sha256": "b66408a910866563b9f7bfe5958b87cc8f55e1de916742fe1d72d2316596d163"
+    },
+    {
+      "path": "test/http.test.mjs",
+      "sha256": "76c5ba1d33b14b31d38fb53469d9635d167b89eca8fca941cafea8e079a03994"
+    },
+    {
+      "path": "test/policy.test.mjs",
+      "sha256": "05791e2f4070defcdbb93619cd4711748967f2f841c5294a9baf64a38c76c17e"
+    },
+    {
+      "path": "test/recovery.test.mjs",
+      "sha256": "6178e3415ad7cea30088e5a1fec4b5995a9937cfac0087c8bcbe6b214c95b071"
+    }
+  ]
+}
